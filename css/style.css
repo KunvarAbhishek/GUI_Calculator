@@ -1,0 +1,164 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	background:url('https://static.wixstatic.com/media/bb1bd6_aece458af3504a6ab4f036e7fc673e00~mv2.png/v1/fill/w_924,h_622,al_c,q_90,enc_auto/bb1bd6_aece458af3504a6ab4f036e7fc673e00~mv2.png');
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+#header{
+	text-align: center;
+	margin-top: 20px;
+}
+
+#header{
+	display: block;
+}
+
+#titleHeader{
+	color: white
+}
+
+#titleHeader{
+	display: inline-block;
+	border: 2px solid black;
+	padding: 8px;
+	border-radius: 30px;
+	box-shadow: 5px 4px #C0C0C0;
+}
+
+.main-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.calculator{
+	margin-top: 50px;
+	display: inline-block;
+	border: 2px solid black;
+	width: 370px;
+	height: 430px;
+	border-radius: 30px;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.5);
+	box-shadow: 2px 2px 2px 2px
+}
+
+.history{
+	margin-top: 50px;
+	display: inline-block;
+	border: 2px solid black;
+	width: 500px;
+	height: 400px;
+	border-radius: 30px;
+	padding: 20px;
+	color: white;
+	box-shadow: 2px 2px 2px 2px
+}
+
+input{
+	border: 2px solid lightblue;
+	height: 60px;
+	width: 100%;
+	padding: 10px;
+	text-align: right;
+	border-radius: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	color: darkblue;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.calculator #buttonContainer{
+	margin-top: 40px;
+/*	border: 2px solid green;*/
+}
+
+.line1{
+	margin-left: 20px;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: 10px;
+	column-gap: 0x;
+}
+
+
+.btn{
+	width: 50px;
+	height: 50px;
+	font-weight: bold;
+	font-size: 15px;
+	border-radius: 20px;
+}
+
+#answer {
+	text-align: right;
+}
+
+.historyDetails #operation {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds space between items */
+    list-style-type: none; /* Removes bullets */
+    padding: 20px; /* Removes default padding */
+}
+.historyDetails #operation li {
+    width: auto; /* Adjusts the width to fit 3 items per row with space */
+    box-sizing: border-box; /* Ensures padding/margin does not affect width calculation */
+    padding: 5px; /* Adds padding inside each item */
+    background-color: white; /* Adds a background color for visibility */
+    margin-bottom: 10px; /* Adds space at the bottom */
+    border-radius: 4px; /* Rounds the corners */
+    text-align: center; /* Centers text inside the item */
+    color: black;
+}
+#historyTitle {
+        text-align: center; /* Optional: For text alignment inside the element */
+}
+
+ul{
+	text-decoration: none;
+}
+
+.ans{
+	background:  #6BFF59;
+}
+
+.del{
+	background:  #FFA459 ;
+}
+
+.ac{
+	background: red;
+}
+
+#titleHeader:hover{
+	color: orange;
+	transform: scale(1.1);
+	box-shadow: none
+}
+#buttonContainer button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
+}
+#ansContainer:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
+}
+
+#delHistory{
+	margin-top: 300px;
+	margin-left: 190px;
+}
